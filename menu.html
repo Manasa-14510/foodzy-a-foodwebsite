@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodzy - Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            
+            <h1>Foodzy</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="menu.html" class="active"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for food...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+    </header>
+
+    <main class="menu-page">
+        <div class="menu-categories">
+            <h2>Categories</h2>
+            <ul class="category-list">
+                <li class="active" data-category="breakfast">Breakfast</li>
+                <li data-category="cakes">Cakes</li>
+                <li data-category="icecreams">Ice Creams</li>
+                <li data-category="drinks">Drinks & Juices</li>
+                <li data-category="fruits">Fruits</li>
+                <li data-category="fastfood">Fast Food</li>
+                <li data-category="biryanis">Biryanis</li>
+                <li data-category="sweets">Sweets</li>
+            </ul>
+        </div>
+
+        <div class="menu-items">
+            <div class="category-section active" id="breakfast">
+                <h2 class="category-title">Breakfast <span>(6)</span></h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Fresh Fruit Bowl">
+                        <div class="item-details">
+                            <h3>Fresh Fruit Bowl</h3>
+                            <p>Seasonal fruits including berries, melon, and citrus with a honey-yogurt drizzle</p>
+                            <div class="item-price">$4.99</div>
+                            <button class="add-btn" data-id="7" data-name="Fresh Fruit Bowl" data-price="4.99" data-image="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Avocado Toast">
+                        <div class="item-details">
+                            <h3>Avocado Toast</h3>
+                            <p>Smashed avocado on artisan sourdough with cherry tomatoes, microgreens and a poached egg</p>
+                            <div class="item-price">$6.50</div>
+                            <button class="add-btn" data-id="8" data-name="Avocado Toast" data-price="6.50" data-image="https://images.unsplash.com/photo-1525351484163-7529414344d8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Breakfast Burrito">
+                        <div class="item-details">
+                            <h3>Breakfast Burrito</h3>
+                            <p>Scrambled eggs, black beans, cheese, and salsa wrapped in a warm flour tortilla</p>
+                            <div class="item-price">$5.99</div>
+                            <button class="add-btn" data-id="9" data-name="Breakfast Burrito" data-price="5.99" data-image="https://images.unsplash.com/photo-1626700051175-6818013e1d4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Pancake Stack">
+                        <div class="item-details">
+                            <h3>Fluffy Pancake Stack</h3>
+                            <p>Three fluffy buttermilk pancakes served with maple syrup and fresh berries</p>
+                            <div class="item-price">$5.50</div>
+                            <button class="add-btn" data-id="10" data-name="Fluffy Pancake Stack" data-price="5.50" data-image="https://images.unsplash.com/photo-1528207776546-365bb710ee93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1510693206972-df098062cb71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1098&q=80" alt="Veggie Omelette">
+                        <div class="item-details">
+                            <h3>Veggie Omelette</h3>
+                            <p>Three-egg omelette with bell peppers, spinach, mushrooms, and cheddar cheese</p>
+                            <div class="item-price">$6.99</div>
+                            <button class="add-btn" data-id="11" data-name="Veggie Omelette" data-price="6.99" data-image="https://images.unsplash.com/photo-1510693206972-df098062cb71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1098&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Yogurt Parfait">
+                        <div class="item-details">
+                            <h3>Greek Yogurt Parfait</h3>
+                            <p>Creamy Greek yogurt layered with granola, honey, and fresh berries</p>
+                            <div class="item-price">$4.50</div>
+                            <button class="add-btn" data-id="12" data-name="Greek Yogurt Parfait" data-price="4.50" data-image="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-section" id="cakes">
+                <h2 class="category-title">Cakes <span>(6)</span></h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80" alt="Chocolate Cake">
+                        <div class="item-details">
+                            <h3>Triple Chocolate Cake</h3>
+                            <p>Rich chocolate cake with chocolate ganache and chocolate buttercream frosting</p>
+                            <div class="item-price">$6.99</div>
+                            <button class="add-btn" data-id="13" data-name="Triple Chocolate Cake" data-price="6.99" data-image="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Strawberry Cheesecake">
+                        <div class="item-details">
+                            <h3>Strawberry Cheesecake</h3>
+                            <p>Creamy New York style cheesecake with fresh strawberry topping</p>
+                            <div class="item-price">$7.50</div>
+                            <button class="add-btn" data-id="14" data-name="Strawberry Cheesecake" data-price="7.50" data-image="https://images.unsplash.com/photo-1533134242443-d4fd215305ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBS0XYZPxBOt5ZaTlLJmMRyvp0Nql1xrxPTw&s" alt="Red Velvet Cake">
+                        <div class="item-details">
+                            <h3>Red Velvet Cake</h3>
+                            <p>Classic red velvet cake with cream cheese frosting and white chocolate shavings</p>
+                            <div class="item-price">$6.99</div>
+                            <button class="add-btn" data-id="15" data-name="Red Velvet Cake" data-price="6.99" data-image="https://images.unsplash.com/photo-1586788680434-30d324626f14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1051&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80" alt="Carrot Cake">
+                        <div class="item-details">
+                            <h3>Spiced Carrot Cake</h3>
+                            <p>Moist carrot cake with walnuts, cinnamon, and cream cheese frosting</p>
+                            <div class="item-price">$6.50</div>
+                            <button class="add-btn" data-id="16" data-name="Spiced Carrot Cake" data-price="6.50" data-image="https://images.unsplash.com/photo-1621303837174-89787a7d4729?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=736&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Tiramisu">
+                        <div class="item-details">
+                            <h3>Classic Tiramisu</h3>
+                            <p>Italian dessert with coffee-soaked ladyfingers and mascarpone cream</p>
+                            <div class="item-price">$7.99</div>
+                            <button class="add-btn" data-id="17" data-name="Classic Tiramisu" data-price="7.99" data-image="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeXr2APZsSFOz9jXSHQwKQPuIESLdOYS9log&s" alt="Lemon Cake">
+                        <div class="item-details">
+                            <h3>Lemon Drizzle Cake</h3>
+                            <p>Light lemon-infused cake with lemon glaze and candied lemon peel</p>
+                            <div class="item-price">$5.99</div>
+                            <button class="add-btn" data-id="18" data-name="Lemon Drizzle Cake" data-price="5.99" data-image="https://images.unsplash.com/photo-1514910771018-e0963d19a731?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category-section" id="icecreams">
+                <h2 class="category-title">Ice Creams <span>(6)</span></h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80" alt="Vanilla Ice Cream">
+                        <div class="item-details">
+                            <h3>Madagascar Vanilla</h3>
+                            <p>Creamy vanilla ice cream made with premium Madagascar vanilla beans</p>
+                            <div class="item-price">$3.99</div>
+                            <button class="add-btn" data-id="19" data-name="Madagascar Vanilla" data-price="3.99" data-image="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Chocolate Ice Cream">
+                        <div class="item-details">
+                            <h3>Belgian Chocolate</h3>
+                            <p>Rich chocolate ice cream made with premium Belgian chocolate</p>
+                            <div class="item-price">$4.50</div>
+                            <button class="add-btn" data-id="20" data-name="Belgian Chocolate" data-price="4.50" data-image="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Strawberry Ice Cream">
+                        <div class="item-details">
+                            <h3>Fresh Strawberry</h3>
+                            <p>Creamy strawberry ice cream with chunks of real strawberries</p>
+                            <div class="item-price">$4.25</div>
+                            <button class="add-btn" data-id="21" data-name="Fresh Strawberry" data-price="4.25" data-image="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Mint Chocolate Chip">
+                        <div class="item-details">
+                            <h3>Mint Chocolate Chip</h3>
+                            <p>Refreshing mint ice cream with dark chocolate chips</p>
+                            <div class="item-price">$4.50</div>
+                            <button class="add-btn" data-id="22" data-name="Mint Chocolate Chip" data-price="4.50" data-image="https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80" alt="Cookies and Cream">
+                        <div class="item-details">
+                            <h3>Cookies and Cream</h3>
+                            <p>Vanilla ice cream with chunks of chocolate sandwich cookies</p>
+                            <div class="item-price">$4.25</div>
+                            <button class="add-btn" data-id="23" data-name="Cookies and Cream" data-price="4.25" data-image="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80">Add</button>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://images.unsplash.com/photo-1516043827470-d52c543c438f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Mango Sorbet">
+                        <div class="item-details">
+                            <h3>Mango Sorbet</h3>
+                            <p>Refreshing dairy-free sorbet made with ripe Alphonso mangoes</p>
+                            <div class="item-price">$3.99</div>
+                            <button class="add-btn" data-id="24" data-name="Mango Sorbet" data-price="3.99" data-image="https://images.unsplash.com/photo-1516043827470-d52c543c438f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other categories would follow the same pattern -->
+            <div class="category-section" id="drinks">
+                <!-- Drinks items -->
+            </div>
+            <div class="category-section" id="fruits">
+                <!-- Fruits items -->
+            </div>
+            <div class="category-section" id="fastfood">
+                <!-- Fast food items -->
+            </div>
+            <div class="category-section" id="biryanis">
+                <!-- Biryani items -->
+            </div>
+            <div class="category-section" id="sweets">
+                <!-- Sweets items -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Foodzy</h2>
+                <p>Delicious food at your doorstep</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Cuisine City</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@foodzy.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Foodzy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

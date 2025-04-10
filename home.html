@@ -1,0 +1,848 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodzy - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <h1>Foodzy</h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="user-actions">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for food...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+            <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide active">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ZKDq5JAVkD8O7RNsZ72o7pBRvfpwtG.png" alt="Food Carousel">
+                    <div class="carousel-content">
+                        <h2>Special Offer!</h2>
+                        <p>Get 20% off on all breakfast items</p>
+                        <span class="price">Starting at $4.99</span>
+                        <button class="order-now-btn">Order Now</button>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EG7Ye5dz6sDjRPez2CCi4pOVxnkTeE.png" alt="Fresh Fruits">
+                    <div class="carousel-content">
+                        <h2>Fresh Fruits</h2>
+                        <p>Healthy options delivered to your doorstep</p>
+                        <span class="price">Starting at $2.99</span>
+                        <button class="order-now-btn">Order Now</button>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-05%20at%2013.04.14_038a6c83.jpg-cjeiArtrcnNm65KV3Z5NnSHj2IqYT2.jpeg" alt="Breakfast Menu">
+                    <div class="carousel-content">
+                        <h2>Breakfast Special</h2>
+                        <p>Start your day with our delicious breakfast options</p>
+                        <span class="price">Starting at $5.50</span>
+                        <button class="order-now-btn">Order Now</button>
+                    </div>
+                </div>
+                <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular-items">
+            <h2 class="section-title">Here are some popular food items</h2>
+            <div class="food-grid">
+                <div class="food-card">
+                    <div class="food-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-05%20at%2013.04.14_038a6c83.jpg-cjeiArtrcnNm65KV3Z5NnSHj2IqYT2.jpeg" alt="Chicken Wrap">
+                    </div>
+                    <div class="food-info">
+                        <h3>Chicken Wrap</h3>
+                        <p>Chicken nuggets wrapped in salsa sauce making the best meal</p>
+                        <div class="food-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5</span>
+                            </div>
+                            <div class="price">$5.50</div>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="1" data-name="Chicken Wrap" data-price="5.50" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-05%20at%2013.04.14_038a6c83.jpg-cjeiArtrcnNm65KV3Z5NnSHj2IqYT2.jpeg">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-05%20at%2013.04.14_038a6c83.jpg-cjeiArtrcnNm65KV3Z5NnSHj2IqYT2.jpeg" alt="Morning Salads">
+                    </div>
+                    <div class="food-info">
+                        <h3>Morning Salads</h3>
+                        <p>A fresh start to the day with tossed veggies in herb sauce</p>
+                        <div class="food-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                            <div class="price">$4.50</div>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="2" data-name="Morning Salads" data-price="4.50" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-05%20at%2013.04.14_038a6c83.jpg-cjeiArtrcnNm65KV3Z5NnSHj2IqYT2.jpeg">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-05%20at%2013.04.14_038a6c83.jpg-cjeiArtrcnNm65KV3Z5NnSHj2IqYT2.jpeg" alt="Veg Wraps">
+                    </div>
+                    <div class="food-info">
+                        <h3>Veg Wraps</h3>
+                        <p>Fresh vegetables wrapped in salsa sauce for a healthy meal</p>
+                        <div class="food-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0</span>
+                            </div>
+                            <div class="price">$5.50</div>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="3" data-name="Veg Wraps" data-price="5.50" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-04-05%20at%2013.04.14_038a6c83.jpg-cjeiArtrcnNm65KV3Z5NnSHj2IqYT2.jpeg">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EG7Ye5dz6sDjRPez2CCi4pOVxnkTeE.png" alt="Fresh Grapes">
+                    </div>
+                    <div class="food-info">
+                        <h3>Fresh Grapes</h3>
+                        <p>Sonaka Seedless Grapes, 500g of pure freshness</p>
+                        <div class="food-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.2</span>
+                            </div>
+                            <div class="price">$3.99</div>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="4" data-name="Fresh Grapes" data-price="3.99" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EG7Ye5dz6sDjRPez2CCi4pOVxnkTeE.png">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ZKDq5JAVkD8O7RNsZ72o7pBRvfpwtG.png" alt="Strawberry Crepes">
+                    </div>
+                    <div class="food-info">
+                        <h3>Strawberry Crepes</h3>
+                        <p>Delicious crepes with fresh strawberries and whipped cream</p>
+                        <div class="food-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.7</span>
+                            </div>
+                            <div class="price">$6.99</div>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="5" data-name="Strawberry Crepes" data-price="6.99" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ZKDq5JAVkD8O7RNsZ72o7pBRvfpwtG.png">Add to Cart</button>
+                    </div>
+                </div>
+
+                <div class="food-card">
+                    <div class="food-img">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ZKDq5JAVkD8O7RNsZ72o7pBRvfpwtG.png" alt="Dumplings">
+                    </div>
+                    <div class="food-info">
+                        <h3>Steamed Dumplings</h3>
+                        <p>Traditional dumplings with sesame seeds and dipping sauce</p>
+                        <div class="food-meta">
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>4.3</span>
+                            </div>
+                            <div class="price">$7.50</div>
+                        </div>
+                        <button class="add-to-cart-btn" data-id="6" data-name="Steamed Dumplings" data-price="7.50" data-image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ZKDq5JAVkD8O7RNsZ72o7pBRvfpwtG.png">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>Foodzy</h2>
+                <p>Delicious food at your doorstep</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Cuisine City</p>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@foodzy.com</p>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Foodzy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+--> <!-- -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Foodzy - Home</title>
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+ </head>
+ <body>
+     <header class="main-header">
+         <div class="logo">
+             <div class="logo-icon">F</div>
+             <h1>Foodzy</h1>
+         </div>
+         <nav class="main-nav">
+             <ul>
+                 <li><a href="home.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                 <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                 <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                 <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+             </ul>
+         </nav>
+         <div class="user-actions">
+             <div class="search-bar">
+                 <input type="text" placeholder="Search for food...">
+                 <button><i class="fas fa-search"></i></button>
+             </div>
+             <a href="cart.html" class="cart-icon">
+                 <i class="fas fa-shopping-cart"></i>
+                 <span class="cart-count">0</span>
+             </a>
+             <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+         </div>
+     </header>
+ 
+     <main>
+         <section class="hero-carousel">
+             <div class="carousel-container">
+                 <div class="carousel-slide active">
+                     <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1081&q=80" alt="Pizza Special">
+                     <div class="carousel-content">
+                         <h2>Pizza Special Offer!</h2>
+                         <p>Get 20% off on all gourmet pizzas this week</p>
+                         <span class="price">Starting at $9.99</span>
+                         <button class="order-now-btn">Order Now</button>
+                     </div>
+                 </div>
+                 <div class="carousel-slide">
+                     <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fresh Fruits">
+                     <div class="carousel-content">
+                         <h2>Fresh Fruits Basket</h2>
+                         <p>Healthy options delivered to your doorstep</p>
+                         <span class="price">Starting at $12.99</span>
+                         <button class="order-now-btn">Order Now</button>
+                     </div>
+                 </div>
+                 <div class="carousel-slide">
+                     <img src="https://images.unsplash.com/photo-1600335895229-6e75511892c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Breakfast Menu">
+                     <div class="carousel-content">
+                         <h2>Breakfast Special</h2>
+                         <p>Start your day with our delicious breakfast options</p>
+                         <span class="price">Starting at $5.50</span>
+                         <button class="order-now-btn">Order Now</button>
+                     </div>
+                 </div>
+                 <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                 <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                 <div class="carousel-dots">
+                     <span class="dot active" data-slide="0"></span>
+                     <span class="dot" data-slide="1"></span>
+                     <span class="dot" data-slide="2"></span>
+                 </div>
+             </div>
+         </section>
+ 
+         <section class="food-categories">
+     <h2 class="section-title">Browse Food Categories</h2>
+     <div class="categories-grid">
+         <div class="category-card">
+             <div class="category-img">
+                 <img src="https://images.unsplash.com/photo-1533089860892-a9b969df67e3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Breakfast">
+             </div>
+             <div class="category-info">
+                 <h3>Breakfast</h3>
+                 <p>Start your day right</p>
+                 <a href="menu.html" class="category-link">View Menu <i class="fas fa-arrow-right"></i></a>
+             </div>
+         </div>
+         <div class="category-card">
+             <div class="category-img">
+                 <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80" alt="Cakes">
+             </div>
+             <div class="category-info">
+                 <h3>Cakes & Desserts</h3>
+                 <p>Sweet treats for any occasion</p>
+                 <a href="menu.html" class="category-link">View Menu <i class="fas fa-arrow-right"></i></a>
+             </div>
+         </div>
+         <div class="category-card">
+             <div class="category-img">
+                 <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=627&q=80" alt="Ice Creams">
+             </div>
+             <div class="category-info">
+                 <h3>Ice Creams</h3>
+                 <p>Cool down with our premium selection</p>
+                 <a href="menu.html" class="category-link">View Menu <i class="fas fa-arrow-right"></i></a>
+             </div>
+         </div>
+         <div class="category-card">
+             <div class="category-img">
+                 <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Drinks & Juices">
+             </div>
+             <div class="category-info">
+                 <h3>Drinks & Juices</h3>
+                 <p>Refresh yourself with natural beverages</p>
+                 <a href="menu.html" class="category-link">View Menu <i class="fas fa-arrow-right"></i></a>
+             </div>
+         </div>
+         <div class="category-card">
+             <div class="category-img">
+                 <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fruits">
+             </div>
+             <div class="category-info">
+                 <h3>Fresh Fruits</h3>
+                 <p>Seasonal and exotic fruits</p>
+                 <a href="menu.html" class="category-link">View Menu <i class="fas fa-arrow-right"></i></a>
+             </div>
+         </div>
+         <div class="category-card">
+             <div class="category-img">
+                 <img src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fast Food">
+             </div>
+             <div class="category-info">
+                 <h3>Fast Food</h3>
+                 <p>Quick and delicious meals</p>
+                 <a href="menu.html" class="category-link">View Menu <i class="fas fa-arrow-right"></i></a>
+             </div>
+         </div>
+         <div class="category-card">
+             <div class="category-img">
+                 <img src="https://images.unsplash.com/photo-1633945274405-b6c8069047b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Biryanis">
+             </div>
+             <div class="category-info">
+                 <h3>Biryanis</h3>
+                 <p>Aromatic and flavorful rice dishes</p>
+                 <a href="menu.html" class="category-link">View Menu <i class="fas fa-arrow-right"></i></a>
+             </div>
+         </div>
+         <div class="category-card">
+             <div class="category-img">
+                 <img src="https://images.unsplash.com/photo-1605807646983-377bc5a76493?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Sweets">
+             </div>
+             <div class="category-info">
+                 <h3>Sweets</h3>
+                 <p>Traditional and modern desserts</p>
+                 <a href="menu.html" class="category-link">View Menu <i class="fas fa-arrow-right"></i></a>
+             </div>
+         </div>
+     </div>
+ </section>
+ 
+         <section class="popular-items">
+             <h2 class="section-title">Here are some popular food items</h2>
+             <div class="food-grid">
+                 <div class="food-card">
+                     <div class="food-img">
+                         <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1220&q=80" alt="Chicken Wrap">
+                     </div>
+                     <div class="food-info">
+                         <h3>Chicken Wrap</h3>
+                         <p>Tender grilled chicken with fresh veggies wrapped in a soft tortilla with our special sauce</p>
+                         <div class="food-meta">
+                             <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star-half-alt"></i>
+                                 <span>4.5</span>
+                             </div>
+                             <div class="price">$5.50</div>
+                         </div>
+                         <button class="add-to-cart-btn" data-id="1" data-name="Chicken Wrap" data-price="5.50" data-image="https://images.unsplash.com/photo-1550317138-10000687a72b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1220&q=80">Add to Cart</button>
+                     </div>
+                 </div>
+ 
+                 <div class="food-card">
+                     <div class="food-img">
+                         <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Garden Fresh Salad">
+                     </div>
+                     <div class="food-info">
+                         <h3>Garden Fresh Salad</h3>
+                         <p>Crisp lettuce, tomatoes, cucumbers, and bell peppers with our homemade vinaigrette dressing</p>
+                         <div class="food-meta">
+                             <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <span>4.0</span>
+                             </div>
+                             <div class="price">$4.50</div>
+                         </div>
+                         <button class="add-to-cart-btn" data-id="2" data-name="Garden Fresh Salad" data-price="4.50" data-image="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">Add to Cart</button>
+                     </div>
+                 </div>
+ 
+                 <div class="food-card">
+                     <div class="food-img">
+                         <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="Strawberry Crepes">
+                     </div>
+                     <div class="food-info">
+                         <h3>Strawberry Crepes</h3>
+                         <p>Thin, delicate crepes filled with fresh strawberries and topped with whipped cream and powdered sugar</p>
+                         <div class="food-meta">
+                             <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <span>5.0</span>
+                             </div>
+                             <div class="price">$6.99</div>
+                         </div>
+                         <button class="add-to-cart-btn" data-id="3" data-name="Strawberry Crepes" data-price="6.99" data-image="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80">Add to Cart</button>
+                     </div>
+                 </div>
+ 
+                 <div class="food-card">
+                     <div class="food-img">
+                         <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fresh Seedless Grapes">
+                     </div>
+                     <div class="food-info">
+                         <h3>Fresh Seedless Grapes</h3>
+                         <p>Premium Sonaka seedless grapes, 500g of sweet, juicy freshness perfect for a healthy snack</p>
+                         <div class="food-meta">
+                             <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <span>4.2</span>
+                             </div>
+                             <div class="price">$3.99</div>
+                         </div>
+                         <button class="add-to-cart-btn" data-id="4" data-name="Fresh Seedless Grapes" data-price="3.99" data-image="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">Add to Cart</button>
+                     </div>
+                 </div>
+ 
+                 <div class="food-card">
+                     <div class="food-img">
+                         <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Steamed Dumplings">
+                     </div>
+                     <div class="food-info">
+                         <h3>Steamed Dumplings</h3>
+                         <p>Handmade dumplings filled with minced pork and vegetables, served with soy dipping sauce</p>
+                         <div class="food-meta">
+                             <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star-half-alt"></i>
+                                 <span>4.7</span>
+                             </div>
+                             <div class="price">$7.50</div>
+                         </div>
+                         <button class="add-to-cart-btn" data-id="5" data-name="Steamed Dumplings" data-price="7.50" data-image="https://images.unsplash.com/photo-1541544741938-0af808871cc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80">Add to Cart</button>
+                     </div>
+                 </div>
+ 
+                 <div class="food-card">
+                     <div class="food-img">
+                         <img src="https://images.unsplash.com/photo-1580013759032-c96505e24c1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Grilled Chicken Salad">
+                     </div>
+                     <div class="food-info">
+                         <h3>Grilled Chicken Salad</h3>
+                         <p>Grilled chicken breast on a bed of mixed greens with cherry tomatoes, avocado, and balsamic dressing</p>
+                         <div class="food-meta">
+                             <div class="rating">
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="fas fa-star"></i>
+                                 <i class="far fa-star"></i>
+                                 <span>4.3</span>
+                             </div>
+                             <div class="price">$8.50</div>
+                         </div>
+                         <button class="add-to-cart-btn" data-id="6" data-name="Grilled Chicken Salad" data-price="8.50" data-image="https://images.unsplash.com/photo-1580013759032-c96505e24c1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80">Add to Cart</button>
+                     </div>
+                 </div>
+             </div>
+         </section>
+     </main>
+ 
+     <footer>
+         <div class="footer-content">
+             <div class="footer-logo">
+                 <h2>Foodzy</h2>
+                 <p>Delicious food at your doorstep</p>
+             </div>
+             <div class="footer-links">
+                 <h3>Quick Links</h3>
+                 <ul>
+                     <li><a href="home.html">Home</a></li>
+                     <li><a href="menu.html">Menu</a></li>
+                     <li><a href="about.html">About Us</a></li>
+                     <li><a href="contact.html">Contact Us</a></li>
+                 </ul>
+             </div>
+             <div class="footer-contact">
+                 <h3>Contact Us</h3>
+                 <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Cuisine City</p>
+                 <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                 <p><i class="fas fa-envelope"></i> info@foodzy.com</p>
+             </div>
+             <div class="footer-social">
+                 <h3>Follow Us</h3>
+                 <div class="social-icons">
+                     <a href="#"><i class="fab fa-facebook"></i></a>
+                     <a href="#"><i class="fab fa-twitter"></i></a>
+                     <a href="#"><i class="fab fa-instagram"></i></a>
+                     <a href="#"><i class="fab fa-pinterest"></i></a>
+                 </div>
+             </div>
+         </div>
+         <div class="footer-bottom">
+             <p>&copy; 2025 Foodzy. All rights reserved.</p>
+         </div>
+     </footer>
+ 
+     <script src="script.js"></script>
+ </body>
+ </html>
+  --> --> -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Foodzy - Home</title>
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+      <header class="main-header">
+          <div class="logo">
+        
+              <h1>Foodzy</h1>
+          </div>
+          <nav class="main-nav">
+              <ul>
+                  <li><a href="home.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                  <li><a href="menu.html"><i class="fas fa-utensils"></i> Menu</a></li>
+                  <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                  <li><a href="contact.html"><i class="fas fa-phone"></i> Contact Us</a></li>
+              </ul>
+          </nav>
+          <div class="user-actions">
+              <div class="search-bar">
+                  <input type="text" placeholder="Search for food...">
+                  <button><i class="fas fa-search"></i></button>
+              </div>
+              <a href="cart.html" class="cart-icon">
+                  <i class="fas fa-shopping-cart"></i>
+                  <span class="cart-count">0</span>
+              </a>
+              <button class="logout-btn"><i class="fas fa-sign-out-alt"></i> Logout</button>
+          </div>
+      </header>
+  
+      <main>
+          <section class="hero-carousel">
+              <div class="carousel-container">
+                  <div class="carousel-slide active">
+                      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Food Carousel">
+                      <div class="carousel-content">
+                          <h2>Special Offer!</h2>
+                          <p>Get 20% off on all breakfast items</p>
+                          <span class="price">Starting at $4.99</span>
+                          <button class="order-now-btn">Order Now</button>
+                      </div>
+                  </div>
+                  <div class="carousel-slide">
+                      <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fresh Fruits">
+                      <div class="carousel-content">
+                          <h2>Fresh Fruits</h2>
+                          <p>Healthy options delivered to your doorstep</p>
+                          <span class="price">Starting at $2.99</span>
+                          <button class="order-now-btn">Order Now</button>
+                      </div>
+                  </div>
+                  <div class="carousel-slide">
+                      <img src="https://st3.depositphotos.com/1811868/15791/i/1600/depositphotos_157911646-stock-photo-fresh-color-juices-smoothie-tropical.jpg" alt="Breakfast Menu">
+                      <div class="carousel-content">
+                          <h2>Breakfast Special</h2>
+                          <p>Start your day with our delicious breakfast options</p>
+                          <span class="price">Starting at $5.50</span>
+                          <button class="order-now-btn">Order Now</button>
+                      </div>
+                  </div>
+                  <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                  <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                  <div class="carousel-dots">
+                      <span class="dot active" data-slide="0"></span>
+                      <span class="dot" data-slide="1"></span>
+                      <span class="dot" data-slide="2"></span>
+                  </div>
+              </div>
+          </section>
+  
+          <section class="popular-items">
+              <h2 class="section-title">Here are some popular food items</h2>
+              <div class="food-grid">
+                  <div class="food-card">
+                      <div class="food-img">
+                          <img src="https://images.unsplash.com/photo-1550317138-10000687a72b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1220&q=80" alt="Chicken Wrap">
+                      </div>
+                      <div class="food-info">
+                          <h3>Chicken Wrap</h3>
+                          <p>Tender grilled chicken with fresh veggies wrapped in a soft tortilla with our special sauce</p>
+                          <div class="food-meta">
+                              <div class="rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                  <span>4.5</span>
+                              </div>
+                              <div class="price">$5.50</div>
+                          </div>
+                          <button class="add-to-cart-btn" data-id="1" data-name="Chicken Wrap" data-price="5.50" data-image="https://images.unsplash.com/photo-1550317138-10000687a72b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1220&q=80">Add to Cart</button>
+                      </div>
+                  </div>
+  
+                  <div class="food-card">
+                      <div class="food-img">
+                          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Garden Fresh Salad">
+                      </div>
+                      <div class="food-info">
+                          <h3>Garden Fresh Salad</h3>
+                          <p>Crisp lettuce, tomatoes, cucumbers, and bell peppers with our homemade vinaigrette dressing</p>
+                          <div class="food-meta">
+                              <div class="rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <span>4.0</span>
+                              </div>
+                              <div class="price">$4.50</div>
+                          </div>
+                          <button class="add-to-cart-btn" data-id="2" data-name="Garden Fresh Salad" data-price="4.50" data-image="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">Add to Cart</button>
+                      </div>
+                  </div>
+  
+                  <div class="food-card">
+                      <div class="food-img">
+                          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="Strawberry Crepes">
+                      </div>
+                      <div class="food-info">
+                          <h3>Strawberry Crepes</h3>
+                          <p>Thin, delicate crepes filled with fresh strawberries and topped with whipped cream and powdered sugar</p>
+                          <div class="food-meta">
+                              <div class="rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <span>5.0</span>
+                              </div>
+                              <div class="price">$6.99</div>
+                          </div>
+                          <button class="add-to-cart-btn" data-id="3" data-name="Strawberry Crepes" data-price="6.99" data-image="https://images.unsplash.com/photo-1565958011703-44f9829ba187?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80">Add to Cart</button>
+                      </div>
+                  </div>
+  
+                  <div class="food-card">
+                      <div class="food-img">
+                          <img src="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Fresh Seedless Grapes">
+                      </div>
+                      <div class="food-info">
+                          <h3>Fresh Seedless Grapes</h3>
+                          <p>Premium Sonaka seedless grapes, 500g of sweet, juicy freshness perfect for a healthy snack</p>
+                          <div class="food-meta">
+                              <div class="rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <span>4.2</span>
+                              </div>
+                              <div class="price">$3.99</div>
+                          </div>
+                          <button class="add-to-cart-btn" data-id="4" data-name="Fresh Seedless Grapes" data-price="3.99" data-image="https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80">Add to Cart</button>
+                      </div>
+                  </div>
+  
+                  <div class="food-card">
+                      <div class="food-img">
+                          <img src="https://images.unsplash.com/photo-1541544741938-0af808871cc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Steamed Dumplings">
+                      </div>
+                      <div class="food-info">
+                          <h3>Steamed Dumplings</h3>
+                          <p>Handmade dumplings filled with minced pork and vegetables, served with soy dipping sauce</p>
+                          <div class="food-meta">
+                              <div class="rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star-half-alt"></i>
+                                  <span>4.7</span>
+                              </div>
+                              <div class="price">$7.50</div>
+                          </div>
+                          <button class="add-to-cart-btn" data-id="5" data-name="Steamed Dumplings" data-price="7.50" data-image="https://images.unsplash.com/photo-1541544741938-0af808871cc0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80">Add to Cart</button>
+                      </div>
+                  </div>
+  
+                  <div class="food-card">
+                      <div class="food-img">
+                          <img src="https://images.unsplash.com/photo-1580013759032-c96505e24c1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="Grilled Chicken Salad">
+                      </div>
+                      <div class="food-info">
+                          <h3>Grilled Chicken Salad</h3>
+                          <p>Grilled chicken breast on a bed of mixed greens with cherry tomatoes, avocado, and balsamic dressing</p>
+                          <div class="food-meta">
+                              <div class="rating">
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="fas fa-star"></i>
+                                  <i class="far fa-star"></i>
+                                  <span>4.3</span>
+                              </div>
+                              <div class="price">$8.50</div>
+                          </div>
+                          <button class="add-to-cart-btn" data-id="6" data-name="Grilled Chicken Salad" data-price="8.50" data-image="https://images.unsplash.com/photo-1580013759032-c96505e24c1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80">Add to Cart</button>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </main>
+  
+      <footer>
+          <div class="footer-content">
+              <div class="footer-logo">
+                  <h2>Foodzy</h2>
+                  <p>Delicious food at your doorstep</p>
+              </div>
+              <div class="footer-links">
+                  <h3>Quick Links</h3>
+                  <ul>
+                      <li><a href="home.html">Home</a></li>
+                      <li><a href="menu.html">Menu</a></li>
+                      <li><a href="about.html">About Us</a></li>
+                      <li><a href="contact.html">Contact Us</a></li>
+                  </ul>
+              </div>
+              <div class="footer-contact">
+                  <h3>Contact Us</h3>
+                  <p><i class="fas fa-map-marker-alt"></i> 123 Food Street, Cuisine City</p>
+                  <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                  <p><i class="fas fa-envelope"></i> info@foodzy.com</p>
+              </div>
+              <div class="footer-social">
+                  <h3>Follow Us</h3>
+                  <div class="social-icons">
+                      <a href="#"><i class="fab fa-facebook"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                      <a href="#"><i class="fab fa-pinterest"></i></a>
+                  </div>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; 2025 Foodzy. All rights reserved.</p>
+          </div>
+      </footer>
+  
+      <script src="script.js"></script>
+  </body>
+  </html>
+  

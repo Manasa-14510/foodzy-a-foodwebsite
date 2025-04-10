@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodzy - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">
+        <header class="login-header">
+            <div class="logo">
+                <h1>Foodzy</h1>
+            </div>
+            <nav class="login-nav">
+                <ul>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-utensils"></i> Menu</a></li>
+                    <li><a href="#"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#"><i class="fas fa-phone"></i> Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a href="#" class="login-btn">Login</a>
+                <a href="#" class="signup-btn">Sign Up</a>
+            </div>
+        </header>
+
+        <main class="login-main">
+            <div class="login-content">
+                <div class="login-text">
+                    <h2>Craving Something?</h2>
+                    <p>Let's get you started!</p>
+                    <div class="search-container">
+                        <input type="text" placeholder="Let us know the location." class="location-input">
+                        <button class="search-btn">Search</button>
+                    </div>
+                </div>
+                <div class="login-images">
+                    <div class="food-image img1"></div>
+                    <div class="food-image img2"></div>
+                    <div class="food-image img3"></div>
+                </div>
+            </div>
+
+            <div class="login-form-container">
+                <div class="login-form">
+                    <h2>Login to Your Account</h2>
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" required>
+                        </div>
+                        <button type="submit" class="login-submit-btn">Login</button>
+                    </form>
+                    <p class="form-footer">Don't have an account? <a href="#" class="show-signup">Sign Up</a></p>
+                </div>
+
+                <div class="signup-form">
+                    <h2>Create an Account</h2>
+                    <form id="signupForm">
+                        <div class="form-group">
+                            <label for="fullname">Full Name</label>
+                            <input type="text" id="fullname" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-email">Email</label>
+                            <input type="email" id="signup-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <input type="password" id="signup-password" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" required>
+                        </div>
+                        <button type="submit" class="signup-submit-btn">Sign Up</button>
+                    </form>
+                    <p class="form-footer">Already have an account? <a href="#" class="show-login">Login</a></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
